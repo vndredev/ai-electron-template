@@ -1,3 +1,10 @@
+# [0.2.0-dev.4](https://github.com/vndredev/ai-electron-template/compare/v0.2.0-dev.3...v0.2.0-dev.4) (2025-11-24)
+
+
+### Bug Fixes
+
+* use GITHUB_TOKEN instead of GH_TOKEN in semantic-release workflow ([3eb2e2b](https://github.com/vndredev/ai-electron-template/commit/3eb2e2b485914372a1fad3cb5f7e14f166b5a967))
+
 # [0.2.0-dev.3](https://github.com/vndredev/ai-electron-template/compare/v0.2.0-dev.2...v0.2.0-dev.3) (2025-11-24)
 
 
