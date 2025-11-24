@@ -1,3 +1,10 @@
+# [0.2.0-dev.6](https://github.com/vndredev/ai-electron-template/compare/v0.2.0-dev.5...v0.2.0-dev.6) (2025-11-24)
+
+
+### Features
+
+* re-enable GitHub releases with updated permissions ([7ce2192](https://github.com/vndredev/ai-electron-template/commit/7ce21926d50d2d23e3335a0fe96358bcff52a28a))
+
 # [0.2.0-dev.5](https://github.com/vndredev/ai-electron-template/compare/v0.2.0-dev.4...v0.2.0-dev.5) (2025-11-24)
 
 
