@@ -3,7 +3,7 @@
 
 appId: com.ai.electron-template
 productName: AI Electron Template
-copyright: Copyright © 2024 ${author}
+copyright: Copyright © 2024
 
 directories:
   buildResources: build
