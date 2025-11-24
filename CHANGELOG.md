@@ -1,3 +1,10 @@
+# [0.2.0-dev.3](https://github.com/vndredev/ai-electron-template/compare/v0.2.0-dev.2...v0.2.0-dev.3) (2025-11-24)
+
+
+### Bug Fixes
+
+* remove author variable from copyright string ([a48d4d4](https://github.com/vndredev/ai-electron-template/commit/a48d4d49f3ab6b8c5b1fa39710d17d91ff5d77d1))
+
 # [0.2.0-dev.2](https://github.com/vndredev/ai-electron-template/compare/v0.2.0-dev.1...v0.2.0-dev.2) (2025-11-24)
 
 
