@@ -1,3 +1,10 @@
+# [0.2.0-dev.8](https://github.com/vndredev/ai-electron-template/compare/v0.2.0-dev.7...v0.2.0-dev.8) (2025-11-24)
+
+
+### Bug Fixes
+
+* remove snap from Linux build targets ([5930284](https://github.com/vndredev/ai-electron-template/commit/5930284bdea4246dcc81c474efd2c1068df0e83f))
+
 # [0.2.0-dev.7](https://github.com/vndredev/ai-electron-template/compare/v0.2.0-dev.6...v0.2.0-dev.7) (2025-11-24)
 
 
