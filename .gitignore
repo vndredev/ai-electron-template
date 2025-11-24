@@ -10,7 +10,6 @@ dist-renderer/
 dist-electron/
 out/
 build/
-preload/
 *.app
 *.exe
 *.dmg
