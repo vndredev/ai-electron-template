@@ -1,3 +1,10 @@
+# [0.2.0-dev.7](https://github.com/vndredev/ai-electron-template/compare/v0.2.0-dev.6...v0.2.0-dev.7) (2025-11-24)
+
+
+### Bug Fixes
+
+* use GH_TOKEN for GitHub releases ([37bd575](https://github.com/vndredev/ai-electron-template/commit/37bd5753ea8039f30c4f7a87f61263d141638274))
+
 # [0.2.0-dev.6](https://github.com/vndredev/ai-electron-template/compare/v0.2.0-dev.5...v0.2.0-dev.6) (2025-11-24)
 
 

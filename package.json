@@ -1,6 +1,6 @@
 {
   "name": "ai-electron-template",
-  "version": "0.2.0-dev.6",
+  "version": "0.2.0-dev.7",
   "description": "Electron + Vite + React + TypeScript app",
   "type": "module",
   "main": "./out/main/index.js",
