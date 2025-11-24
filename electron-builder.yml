@@ -55,22 +55,12 @@ linux:
   executableName: ai-electron-template
   target:
     - AppImage
-    - snap
     - deb
   maintainer: electronjs.org
   category: Utility
 
 appImage:
   artifactName: ${name}-${version}-${os}-${arch}.${ext}
-
-snap:
-  summary: AI Electron Template Application
-  grade: stable
-  confinement: classic
-  publish:
-    - provider: snapStore
-      channels:
-        - edge
 
 npmRebuild: false
 publish:
