@@ -1,9 +1,8 @@
 name: Release
 
 on:
-  push:
-    tags:
-      - 'v*'
+  release:
+    types: [published]
 
 jobs:
   build:
@@ -33,13 +32,17 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Upload artifacts
-        uses: actions/upload-artifact@v4
+      - name: Upload to GitHub Release
+        uses: softprops/action-gh-release@v2
         with:
-          name: ${{ matrix.os }}-build
-          path: |
+          files: |
             dist/*.exe
             dist/*.dmg
+            dist/*.zip
             dist/*.AppImage
             dist/*.deb
             dist/*.snap
+            dist/*.blockmap
+            dist/latest*.yml
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
