@@ -1,0 +1,80 @@
+# electron-builder configuration
+# https://www.electron.build/configuration/configuration
+
+appId: com.ai.electron-template
+productName: AI Electron Template
+copyright: Copyright © 2024 ${author}
+
+directories:
+  buildResources: build
+  output: dist
+
+files:
+  - '!**/.vscode/*'
+  - '!src/*'
+  - '!electron.vite.config.{js,ts,mjs,cjs}'
+  - '!{.eslintignore,.eslintrc.cjs,.prettierignore,.prettierrc.yaml,dev-app-update.yml,CHANGELOG.md,README.md}'
+  - '!{.env,.env.*,.npmrc,pnpm-lock.yaml}'
+  - '!{tsconfig.json,tsconfig.node.json,tsconfig.web.json}'
+
+asarUnpack:
+  - resources/**
+
+afterSign: build/notarize.js
+
+mac:
+  executableName: ai-electron-template
+  entitlementsInherit: build/entitlements.mac.plist
+  extendInfo:
+    - NSCameraUsageDescription: Application requests access to the device's camera.
+    - NSMicrophoneUsageDescription: Application requests access to the device's microphone.
+    - NSDocumentsFolderUsageDescription: Application requests access to the user's Documents folder.
+    - NSDownloadsFolderUsageDescription: Application requests access to the user's Downloads folder.
+  notarize: false # Set to true when ready for distribution
+  category: public.app-category.productivity
+  target:
+    - dmg
+    - zip
+
+dmg:
+  artifactName: ${name}-${version}-${os}-${arch}.${ext}
+  sign: false
+
+win:
+  executableName: ai-electron-template
+  target:
+    - target: nsis
+      arch:
+        - x64
+
+nsis:
+  artifactName: ${name}-${version}-${os}-${arch}.${ext}
+  shortcutName: ${productName}
+  uninstallDisplayName: ${productName}
+  createDesktopShortcut: always
+
+linux:
+  executableName: ai-electron-template
+  target:
+    - AppImage
+    - snap
+    - deb
+  maintainer: electronjs.org
+  category: Utility
+
+appImage:
+  artifactName: ${name}-${version}-${os}-${arch}.${ext}
+
+snap:
+  summary: AI Electron Template Application
+  grade: stable
+  confinement: classic
+  publish:
+    - provider: snapStore
+      channels:
+        - edge
+
+npmRebuild: false
+publish:
+  provider: generic
+  url: https://example.com/auto-updates # Update this when ready for auto-updates

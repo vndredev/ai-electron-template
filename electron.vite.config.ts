@@ -1,0 +1,58 @@
+import { resolve } from 'path'
+import { defineConfig, externalizeDepsPlugin } from 'electron-vite'
+import react from '@vitejs/plugin-react'
+
+export default defineConfig({
+  main: {
+    plugins: [externalizeDepsPlugin()],
+    build: {
+      rollupOptions: {
+        input: {
+          index: resolve(__dirname, 'src/main/main.ts')
+        }
+      }
+    }
+  },
+  preload: {
+    plugins: [externalizeDepsPlugin()],
+    build: {
+      rollupOptions: {
+        input: {
+          index: resolve(__dirname, 'src/preload/preload.ts')
+        },
+        output: {
+          format: 'cjs',
+          entryFileNames: '[name].js'
+        }
+      }
+    }
+  },
+  renderer: {
+    resolve: {
+      alias: {
+        '@': resolve(__dirname, 'src'),
+        '@renderer': resolve(__dirname, 'src/renderer'),
+        '@main': resolve(__dirname, 'src/main'),
+        '@preload': resolve(__dirname, 'src/preload')
+      }
+    },
+    plugins: [react()],
+    build: {
+      rollupOptions: {
+        output: {
+          manualChunks: {
+            vendor: ['react', 'react-dom']
+          }
+        }
+      },
+      sourcemap: true,
+      minify: 'esbuild',
+      target: 'chrome120',
+      chunkSizeWarningLimit: 1000
+    },
+    server: {
+      port: 5173,
+      strictPort: true
+    }
+  }
+})
