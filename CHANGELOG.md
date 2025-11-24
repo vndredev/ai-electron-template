@@ -1,3 +1,10 @@
+# [0.2.0-dev.5](https://github.com/vndredev/ai-electron-template/compare/v0.2.0-dev.4...v0.2.0-dev.5) (2025-11-24)
+
+
+### Bug Fixes
+
+* remove @semantic-release/github plugin to use standard GITHUB_TOKEN ([ee09245](https://github.com/vndredev/ai-electron-template/commit/ee09245e320b50e68fe43d5630a74c2f67a305bd))
+
 # [0.2.0-dev.4](https://github.com/vndredev/ai-electron-template/compare/v0.2.0-dev.3...v0.2.0-dev.4) (2025-11-24)
 
 
