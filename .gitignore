@@ -9,7 +9,9 @@ dist-main/
 dist-renderer/
 dist-electron/
 out/
-build/
+# build/ - Keep build resources for electron-builder
+!build/
+build/*.js
 *.app
 *.exe
 *.dmg

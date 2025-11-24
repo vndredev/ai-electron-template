@@ -20,8 +20,6 @@ files:
 asarUnpack:
   - resources/**
 
-afterSign: build/notarize.js
-
 mac:
   executableName: ai-electron-template
   entitlementsInherit: build/entitlements.mac.plist
