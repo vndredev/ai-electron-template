@@ -1,3 +1,10 @@
+# [0.2.0-dev.2](https://github.com/vndredev/ai-electron-template/compare/v0.2.0-dev.1...v0.2.0-dev.2) (2025-11-24)
+
+
+### Bug Fixes
+
+* add missing build resources for electron-builder ([8be4c43](https://github.com/vndredev/ai-electron-template/commit/8be4c43c6ffe169869d9c373b12a769faab29647))
+
 # [0.2.0-dev.1](https://github.com/vndredev/ai-electron-template/compare/v0.1.0...v0.2.0-dev.1) (2025-11-24)
 
 
