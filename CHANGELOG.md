@@ -1,3 +1,15 @@
+# [0.2.0-dev.1](https://github.com/vndredev/ai-electron-template/compare/v0.1.0...v0.2.0-dev.1) (2025-11-24)
+
+
+### Bug Fixes
+
+* update semantic-release workflow with GH_TOKEN and Node.js 22 ([c25c76c](https://github.com/vndredev/ai-electron-template/commit/c25c76c0b5d8a305de5aca74c58a0b7811e58754))
+
+
+### Features
+
+* add Git Flow with semantic-release and commit enforcement ([978fa53](https://github.com/vndredev/ai-electron-template/commit/978fa53cead15881fc8ca4bc2fc9660f0ab6ef9f))
+
 # Changelog
 
 All notable changes to this project will be documented in this file.
