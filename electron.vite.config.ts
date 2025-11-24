@@ -8,20 +8,10 @@ const __dirname = dirname(__filename)
 
 export default defineConfig({
   main: {
-    plugins: [externalizeDepsPlugin()],
-    build: {
-      rollupOptions: {
-        input: resolve(__dirname, 'src/main/main.ts')
-      }
-    }
+    plugins: [externalizeDepsPlugin()]
   },
   preload: {
-    plugins: [externalizeDepsPlugin()],
-    build: {
-      rollupOptions: {
-        input: resolve(__dirname, 'src/preload/preload.ts')
-      }
-    }
+    plugins: [externalizeDepsPlugin()]
   },
   renderer: {
     resolve: {
